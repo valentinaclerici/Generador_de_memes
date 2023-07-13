@@ -99,8 +99,9 @@ height: 100%;
 
 }
 
-/*ASIDE*/
+/************ASIDE**************/
 
+/******** ASIDE IMAGEN ********/
 .aside-container {
     background-color: #191E2B;
     color: white;
@@ -114,7 +115,8 @@ height: 100%;
     right:0;
     overflow: auto;
 }
-.aside-image {
+
+.aside-image, .aside-text, .aside-text-font {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,21 +128,23 @@ font-size: 1em;
 font-weight: 900;
 padding: 10px;
 }
-.aside-url{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    justify-content: center;
+.aside-url {
+display: flex;
+flex-direction: column;
+width: 90%;
+justify-content: center;
 }
+
 h3{
 font-size: 0.7em;
 margin: 10px;
 margin-bottom: 7px;
 }
-input {
+input, .outline-box button, .lineheight-input {
 background-color: #30343F;
 border: 1px solid #30343F;
 border-radius: 4px;
+color: #fff;
 }
 
 .aside-background {
@@ -163,7 +167,7 @@ justify-self: space-between;
     border-radius: 4px;
 }
 .aside-filters {
-    width: 90%;
+width: 90%;
 display: flex;
 flex-direction: column;
 justify-self: flex-start;
@@ -210,9 +214,149 @@ margin-top: -4.5px;
     border-radius: 5px;
     font-size: 12px;
 }
+input[type=range]:focus{
+    background-color: #8d8f92;   
+}
 .filters-reset-button:hover {
     background-color: #8d8f92;
     border: 1px solid #8d8f92;
     border-radius: 5px;
+}
+
+/******** ASIDE TEXTO ********/
+textarea, .text-font-input {
+    width: 100%;
+    height: 30px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: #30343F; 
+    color: #fff;
+    border: 1 px solid  #30343F;
+    padding: 5px 10px;
+}
+textarea:hover, .outline-box button:hover {
+    background-color: #4E5565;
+    border: 1 px solid #4E5565;
+    border-radius: 5px;
+    text-decoration: none;
+}
+textarea::-webkit-scrollbar {
+    display: none;
+}
+textarea:focus {
+    background-color: #4E5565;
+    border: 1 px solid #4E5565;
+    border-radius: 5px;
+}
+.align-font-container {
+width: 90%;
+display: flex;
+flex-direction: row;
+justify-self: space-between;
+margin-top: 15px;
 
 }
+.text-size-input {
+    width: 50%; 
+    margin-right: 10px;
+    color: #fff;
+}
+.align-button {
+    width: 50%; 
+}
+.align-button button {
+    width: 30%;
+    font-size: 0.7em;
+}
+.color-and-background-container {
+width: 90%;
+display: flex;
+flex-direction: row;
+}
+
+.text-color-input{
+    width: 90%;
+    display: flex;
+}
+.text-background-input{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    margin-left: 10px;
+    color: #fff;
+}
+.text-color, .text-background{
+    width: 50%;
+    justify-content: center;
+}
+.outline-text-container {
+  width: 100%;
+  display: flex;  
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.outline-box{
+display: flex;  
+flex-direction: row;
+justify-content: space-between;
+margin-left: 10px;
+margin-right: 10px;
+} 
+.outline-box button {
+    justify-items: center;
+    width: 30%;
+    padding: 4px;
+    font-size: 0.8em;
+    color:#fff
+    
+}
+.lineheight-input, .padding-input {
+width: 90%;
+height: 40%;
+margin-left: 5%;
+}
+
+/******** DOWNLOAD BUTTON ********/
+
+.download-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2e7d32;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #2e7d32;
+    border-radius: 5px;
+    color: #fff;
+}
+.download-button i {
+    margin-right: 5px;
+}
+.download-button:hover {
+    background-color: #246327;
+    border: 1px solid #246327;
+}
+
+/********RESPONSIVE********/
+
+    @media screen and (max-width 950px){
+        body{
+            font-size: 12px;
+        }
+        h1 {
+                font-size: 20px;
+            }
+        header {
+            width: 100%;
+            height:25%;
+            padding: 10px 0px;
+        }
+        header button {
+            width: 85px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        header{
+            height: 15%;
+            padding: 10px 0px;
+        }
+    }
