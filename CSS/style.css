@@ -22,6 +22,27 @@ header .nav-button.light-mode {
     border: 1px solid #E0E0E0;
     color:  #656464;
 }
+header .nav-button:hover.light-mode {
+background-color: #bdbdbd;
+border: 1px solid #bdbdbd;
+} 
+
+input.aside-url-input.light-mode, input.background-color.light-mode, select.background-fx.light-mode, select.text-font-input.light-mode, input.text-size-input.light-mode, .text-font-input.light-mode, #textAreaBottom.light-mode, input.text-color-input.light-mode, input.text-background-input.light-mode, #outlineNone.light-mode, #outlineLight.light-mode, #outlineDark.light-mode, input.padding-input.light-mode, select.lineheight-input.light-mode, #textAreaTop.light-mode, .filters-reset-button.light-mode {
+    background-color: #bdbdbd;
+    border: 1px solid #bdbdbd;
+}
+.aside-filters.light-mode {
+background-color: #bdbdbd;
+border: 1px solid #bdbdbd;
+}
+
+
+/**HIDDEN ASIDE**/
+.hidden-aside {
+    display: none;
+}
+
+/** BODY **/
 
 body {
     width: 100vw;
@@ -357,7 +378,7 @@ margin-left: 5%;
     border: 1px solid #246327;
 }
 
-/********RESPONSIVE********/
+/********RESPONSIVE
 
     @media screen and (max-width 950px){
         body{
@@ -380,4 +401,4 @@ margin-left: 5%;
             height: 15%;
             padding: 10px 0px;
         }
-    }
+    }********/

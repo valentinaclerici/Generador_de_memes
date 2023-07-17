@@ -17,7 +17,7 @@
         <nav class="nav-button-container">
             <button id="navButtonIm" class="nav-button"><i class="fa-regular fa-image"></i>Imagen</button>
             <button id="navButtonTxt" class="nav-button"><i class="fa-solid fa-font"></i>Texto</button>
-            <button id="lightButton" class="nav-button"><i class="fa-regular fa-lightbulb"></i>Claro</button>
+            <button id="lightButton" class="nav-button"><i class="fa-regular fa-lightbulb"></i> <span id="lightModeButton" class="light-mode-button light">Claro</span></button>
         </nav>
     </header>
     
@@ -30,17 +30,16 @@
         <!--********* ASIDE *********-->
         <aside class="aside-container">
             
-            <!--
-                ********* ASIDE IMAGEN *********
+            
+            <!--********* ASIDE IMAGEN *********-->
                 <article class="aside-image">
                     <h2 class="aside-image-title">IMAGEN</h2>
                     <section class="aside-url">
                         <h3 class="aside-url-title">URL</h3>
                         <input type="text" class="aside-url-input">
                     </section>
-                -->
-                <!--
-                    ASIDE IMAGEN COLOR Y EFECTO FONDO
+                
+                <!-- ASIDE IMAGEN COLOR Y EFECTO FONDO -->
                     <section class="aside-background"> 
                         <h3 class="aside-title">FONDO</h3>
                         <div class="color-input">
@@ -55,9 +54,8 @@
                             </select>
                         </div>
                     </section>
-                -->
-                <!--
-                    ASIDE IMAGEN FILTROS
+               
+                <!--ASIDE IMAGEN FILTROS -->
                     <section class="aside-filters"> 
                         <h3 class="aside-filters-title">FILTROS</h3>
                         <label for="brightnessSlider">Brillo</label>
@@ -90,18 +88,17 @@
                         <button class="filters-reset-button">Restablecer Filtros</button>
                     </section>            
                 </article> 
-            -->
+            
             
             <!-- FIN ASIDE IMAGEN -->
             
             <!-- ********* ASIDE TEXTO ********* -->
-            
-            
+        <div class="hidden-aside">    
             <article class="aside-text">
                 <h2 class="aside-text-title">TEXTO</h2>
                 <section class="aside-top-text">
                     <h3 class="aside-top-text-title">SUPERIOR</h3>
-                    <textarea class="aside-top-text-input">TOP TEXT</textarea>
+                    <textarea id="textAreaTop" class="aside-top-text-input">TOP TEXT</textarea>
                     <div class="checkbox-box>">
                         <input class="top-text-checkbox" type="checkbox">
                         <label for="no-top-text-checkbox">Sin texto
@@ -111,14 +108,14 @@
                     </section>
                     <section class="aside-bottom-text">
                         <h3 class="aside-bottom-text-title">INFERIOR</h3>
-                        <textarea class="aside-bottom-text-input">BOTTOM TEXT</textarea>
+                        <textarea id="textAreaBottom" class="aside-bottom-text-input">BOTTOM TEXT</textarea>
                         <div class="checkbox-box>">
                             <input class="bottom-text-checkbox" type="checkbox">
                             <label for="bottom-text-checkbox">Sin texto
                                 inferior</label>
                             </div>
                     </section>
-                        <!-- FUENTE -->   
+                        <!-- FUENTE -->
                         <h3>FUENTE</h3>
                         <section class="aside-text-font">
                             <select class="text-font-input">
@@ -181,6 +178,9 @@
                                 
                     </section>
                             
+            </article>
+        </div> 
+
                         </aside>
                         <button type="button" class="download-button"><i class="fas fa-download button-icon-text" aria-hidden="true"></i>DESCARGAR</button>
                         <script src="script.js"></script>
