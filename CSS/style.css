@@ -143,7 +143,7 @@ height: 100%;
 
 /************ASIDE**************/
 
-/******** ASIDE IMAGEN ********/
+
 .aside-container {
     background-color: #191E2B;
     color: white;
@@ -157,6 +157,21 @@ height: 100%;
     right:0;
     overflow: auto;
 }
+#closeAsideButton {
+    width: 20%;
+    height: 20%;
+    background-color:#191E2B;
+    color: #fff;
+    border: 1px solid #191E2B;
+    align-self: flex-end;
+    margin-right: 2px;
+    margin-top: 10px;
+}
+#closeAsideButton:hover {
+  font-size: 1em;
+}
+
+
 
 .aside-image, .aside-text, .aside-text-font {
     display: flex;
@@ -168,8 +183,9 @@ height: 100%;
 h2 {
 font-size: 1em;
 font-weight: 900;
-padding: 10px;
+padding: 0px 10px;
 }
+
 .aside-url {
 display: flex;
 flex-direction: column;
@@ -182,6 +198,9 @@ font-size: 0.7em;
 margin: 10px;
 margin-bottom: 7px;
 }
+
+/******** ASIDE IMAGEN ********/
+
 input, .outline-box button, .lineheight-input {
 background-color: #30343F;
 border: 1px solid #30343F;

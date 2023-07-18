@@ -72,3 +72,78 @@ lightMode.addEventListener('click', changeMode)
 
 /*HIDDEN ASIDE */
 
+const textAside = document.querySelector("#asideText");
+const imageAside = document.querySelector(".aside-image");
+const textAsideButton = document.querySelector("#navButtonTxt");
+const imageAsideButton = document.querySelector("#navButtonIm");
+
+const showAside = () => {
+
+  const showMode = textAside.getAttribute("class");
+    if (showMode === "hidden-aside") {
+      textAside.classList.remove('hidden-aside');
+      imageAside.classList.remove('aside-image');
+      imageAside.classList.add('hidden-aside');
+    } else {
+      textAside.classList.add('hidden-aside');
+      imageAside.classList.add('aside-image');
+      imageAside.classList.remove('hidden-aside');
+    }
+  }
+
+textAsideButton.addEventListener("click", showAside);
+imageAsideButton.addEventListener("click", showAside);
+
+
+
+/*CLOSE*/
+
+const closeAsideButton = document.querySelector("#closeAsideButton");
+
+const closeAside = () => {
+
+  imageAside.classList.add('hidden-aside');
+  imageAside.classList.remove('aside-image');
+  textAside.classList.add('hidden-aside');
+  textAside.classList.remove('aside-text');
+  aside.classList.add('hidden-aside');
+  aside.classList.remove('aside-container');
+}
+
+closeAsideButton.addEventListener('click', closeAside)
+
+
+
+
+
+
+
+
+/*
+const buttonImage = document.querySelector("#navButtonIm");
+const buttonText = document.querySelector("#navButtonTxt");
+const asideImage = document.querySelector(".aside-image");
+const asideText = document.querySelector("#asideText");
+const asideBar = document.querySelector(".aside-container");
+
+const showAside = () => {
+
+buttonText.classList.toggle('hidden-aside');
+const showTextAside = asideImage.getAttribute('class');
+
+if (showTextAside === "#asideText.hidden-aside") {
+  asideText.classList.remove('hidden-aside');
+  asideImage.classList.add('hidden-aside');
+  
+  
+} else if (showTextAside === buttonImage) {
+  asideText.classList.add('hidden-aside');
+  asideImage.classList.remove('hidden-aside');
+}
+
+} 
+
+buttonImage.addEventListener("click", showTextAside);
+buttonText.addEventListener("click", showAside);
+
+*/
