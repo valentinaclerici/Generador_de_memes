@@ -176,9 +176,6 @@ for (i = 0; i < filterBlend.length; i++) {
   filterBlend[i].addEventListener('input', changeFilter);
 }
 
-//RESET FILTERS 
-// const resetFilterButton = document.querySelector(".filters-reset-button");
-
 resetButton.addEventListener('click', () => resetFilter())
 
 const resetFilter = () => {
@@ -241,5 +238,79 @@ const hideText2 = () => {
   } 
 }
 hideBottomText.addEventListener('click', hideText2);
+ 
+//Font Size//
+const selectFontSize = document.querySelector(".text-size-input");
+const changeFontSize = () => {
+  topText.style.fontSize = selectFontSize.value + "px";
+  bottomText.style.fontSize = selectFontSize.value + "px";
+}
+selectFontSize.addEventListener('change', changeFontSize);
 
+//Align
+
+const alignLeftBtn = document.querySelector(".align-btn-left");
+const alignLeft = () => {
+  topText.style.justifyContent = 'flex-start';
+  bottomText.style.justifyContent = 'flex-start';
+}
+
+alignLeftBtn.addEventListener('click', alignLeft);
+
+const alignCenterBtn = document.querySelector(".align-btn-center");
+const alignCenter = () => {
+  topText.style.justifyContent = 'center';
+  bottomText.style.justifyContent = 'center';
+}
+
+alignCenterBtn.addEventListener('click', alignCenter);
+
+const alignRightBtn = document.querySelector(".align-btn-right");
+const alignRight = () => {
+  topText.style.justifyContent = 'flex-end';
+  bottomText.style.justifyContent = 'flex-end';
+}
+
+alignRightBtn.addEventListener('click', alignRight);
+
+//Color
+const changeTextColor = () => {
+  const topTextColor = document.querySelector(".top-text");
+  topTextColor.style.color = textColorInput.value;
+
+  const bottomTextColor = document.querySelector(".bottom-text");
+  bottomTextColor.style.color = textColorInput.value;
+
+}
+textColorInput.addEventListener('input', changeTextColor);
+
+//Background
+
+const changeBackgroundColor = () => {
+  const backTopTextColor = document.querySelector(".top-text");
+  backTopTextColor.style.backgroundColor = textBackgroundInput.value;
+
+  const backBottomTextColor = document.querySelector(".bottom-text");
+  backBottomTextColor.style.backgroundColor = textBackgroundInput.value;
+}
+
+textBackgroundInput.addEventListener('input', changeBackgroundColor);
+
+//const backTopTextColor = document.querySelector(".top-text");
+//const backBottomTextColor = document.querySelector(".bottom-text");
+const transparentCheckbox = document.querySelector(".text-background-checkbox");
+
+const transparentBackground = () => {
+    const textBackground = topText.getAttribute('class');
+  
+    if (textBackground === "top-text") {
+      topText.classList.add("transparent-text-top");
+      topText.classList.remove("top-text");
+    } else {
+    topText.classList.add("bottom-text");
+    topText.classList.remove("transparent-text-top");
+    } 
+
+}
+transparentCheckbox.addEventListener('click', transparentBackground);
 

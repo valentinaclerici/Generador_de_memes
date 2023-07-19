@@ -383,6 +383,12 @@ height: 40%;
 margin-left: 5%;
 }
 
+.transparent-text-top {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+}
+
 /******** DOWNLOAD BUTTON ********/
 
 .download-button {
