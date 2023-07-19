@@ -23,7 +23,9 @@
     
     <!--MEME CONTAINER-->
     <div class="meme-container">
-        <p class="top-text">TOP TEXT</p>
+        <!-- <div class="top-text-div"> -->
+        <p class="top-text">TOP TEXT</p> 
+        <!-- </div> -->
         <div class="meme-image"></div>
         <p class="bottom-text">BOTTOM TEXT</p>
         
@@ -38,7 +40,7 @@
                     <h2 class="aside-image-title">IMAGEN</h2>
                     <section class="aside-url">
                         <h3 class="aside-url-title">URL</h3>
-                        <input type="text" class="aside-url-input">
+                        <input type="text" id="url" class="aside-url-input">
                     </section>
                 
                 <!-- ASIDE IMAGEN COLOR Y EFECTO FONDO -->
@@ -62,10 +64,10 @@
                         <h3 class="aside-filters-title">FILTROS</h3>
                         <label for="brightnessSlider">Brillo</label>
                         <input type="range" id="brightnessSlider" class="input-filter" data-property="brightness" min="0"
-                        max="1" step="0.1" value="1">
+                        max="1" step="0.1" value="0">
                         <label for="opacitySlider">Opacidad</label>
                         <input type="range" id="opacitySlider" class="input-filter" data-property="opacity" min="0" max="1"
-                        step="0.1" value="1">
+                        step="0.1" value="0">
                         <label for="contrastSlider">Contraste</label>
                         <input type="range" id="contrastSlider" class="input-filter" data-property="contrast" min="100"
                         max="1000" step="1" value="100">

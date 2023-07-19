@@ -180,6 +180,11 @@ height: 100%;
     align-items: center;
 
 }
+.hidden-text {
+    display: none;
+    visibility: hidden;
+}
+
 h2 {
 font-size: 1em;
 font-weight: 900;
@@ -288,13 +293,13 @@ input[type=range]:focus{
 textarea, .text-font-input {
     width: 100%;
     height: 30px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-family: sans-serif;
     border-radius: 5px;
     background-color: #30343F; 
     color: #fff;
     border: 1 px solid  #30343F;
-    padding: 5px 10px;
+    padding: 7px 5px;
 }
 textarea:hover, .outline-box button:hover {
     background-color: #4E5565;
