@@ -176,51 +176,15 @@ for (i = 0; i < filterBlend.length; i++) {
   filterBlend[i].addEventListener('input', changeFilter);
 }
 
-///////ESTO ES OTRA OPCION P LOS FILTROS/////////
+//RESET FILTERS 
+// const resetFilterButton = document.querySelector(".filters-reset-button");
 
-// const actualizarImagen = (evento) => {
-//   if (evento.target.value.length !== 0) {
-//     $('image-meme').style.backgroundImage = `url("${evento.target.value}")`
-//   }
-// }
+resetButton.addEventListener('click', () => resetFilter())
 
-// const actualizarColorMezcla = (evento) => {
-//   $('blend-mode-color').innerText = evento.target.value.toUpperCase()
-//   $('image-meme').style.backgroundColor = evento.target.value
-// }
+const resetFilter = () => {
+  memeColor.style.filter = `brightness(${brightness.value=1}) opacity(${opacity.value=1}) blur(${blurSlider.value=0}px) contrast(${contrast.value=100}%) grayscale(${grayscale.value=0}%) hue-rotate(${hueRotation.value=0}deg) sepia(${sepia.value=0}%) saturate(${saturation.value=100}%) invert(${invert.value=0})`;
+}
 
-// const actualizarTipoMezcla = (evento) => {
-//   $('image-meme').style.backgroundBlendMode = evento.target.value
-// }
-
-
-// const actualizarFiltros = () => {
-//   const brightness = $('brightness-slider').value
-//   const opacity = $('opacity-slider').value
-//   const blur = $('blur-slider').value
-//   const contrast = $('contrast-slider').value
-//   const grayscale = $('grayscale-slider').value
-//   const hue = $('hue-slider').value
-//   const sepia = $('sepia-slider').value
-//   const saturate = $('saturate-slider').value
-//   const invert = $('invert-slider').value
-
-//   $('.meme-image').style.filter = `brightness(${brightness}) opacity(${opacity}) blur(${blur}px) contrast(${contrast}%) grayscale(${grayscale}%) hue-rotate(${hue}deg) sepia(${sepia}%) saturate(${saturate}%) invert(${invert})`
-// }
-
-// const reestrablecerFiltros = () => {
-//   $('brightness-slider').value = 1
-//   $('opacity-slider').value = 1
-//   $('blur-slider').value = 0
-//   $('contrast-slider').value = 100
-//   $('grayscale-slider').value = 0
-//   $('hue-slider').value = 0
-//   $('sepia-slider').value = 0
-//   $('saturate-slider').value = 100
-//   $('invert-slider').value = 0
-
-//   actualizarFiltros()
-// }
 
 
 //TEXT FILTERS//
@@ -229,7 +193,7 @@ for (i = 0; i < filterBlend.length; i++) {
 const textInputTop = document.querySelector("#textAreaTop");
 const topText = document.querySelector(".top-text");
 const changeText = () => {
-topText.innerText = textInputTop.value;
+  topText.innerText = textInputTop.value;
 }
 textInputTop.addEventListener('input', changeText);
 
@@ -277,3 +241,5 @@ const hideText2 = () => {
   } 
 }
 hideBottomText.addEventListener('click', hideText2);
+
+
