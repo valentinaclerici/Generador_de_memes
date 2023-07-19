@@ -383,10 +383,10 @@ height: 40%;
 margin-left: 5%;
 }
 
-.transparent-text-top {
+.transparent-text {
     background-color: transparent;
     position: absolute;
-    top: 0;
+
 }
 
 /******** DOWNLOAD BUTTON ********/
@@ -408,27 +408,80 @@ margin-left: 5%;
     border: 1px solid #246327;
 }
 
-/********RESPONSIVE
-
-    @media screen and (max-width 950px){
-        body{
-            font-size: 12px;
-        }
-        h1 {
-                font-size: 20px;
-            }
-        header {
-            width: 100%;
-            height:25%;
-            padding: 10px 0px;
-        }
-        header button {
-            width: 85px;
-        }
+/********RESPONSIVE******/
+@media (min-width: 768px and max-width: 1024px) {
+    body {
+        font-size: 1.3em;
+        height: max-content;
     }
-    @media screen and (max-width: 500px) {
-        header{
-            height: 15%;
-            padding: 10px 0px;
-        }
-    }********/
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .nav-button-container {
+        width: 40%;
+    }
+
+    header {
+        width: 100%;
+        padding: 0px;
+        height: 5vh;
+    }
+
+    header button {
+        width: 30%;
+        font-size: 1.6em;
+    }
+
+
+    label {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+    .aside-container {
+        align-items: space-between;
+        font-size: 1em;
+        height: 100%;
+    width: 25%;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    display: unset;
+    }
+
+    #closeAsideButton {
+        display: unset;
+        font-size: 1.6em;
+        height: 1vh;
+    }
+    h2 {
+        text-align: center;
+        font-size: 1.6em;
+    }
+    .font-style{
+        width: 30%;
+    }
+    .margin-text{
+        margin: 10px 0px;
+    }
+
+    .container-text {
+        margin-top: 0px;
+    }
+    #asideText {
+        width: 90%;
+        height: 100%;
+        margin: 5%
+    }
+   
+.aside-top-text, .aside-bottom-text {
+    width: 95%;
+} 
+.meme-container {
+    width: 60%;
+    height: 60%;
+}
+} 

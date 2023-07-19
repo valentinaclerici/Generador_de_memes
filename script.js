@@ -287,28 +287,24 @@ textColorInput.addEventListener('input', changeTextColor);
 //Background
 
 const changeBackgroundColor = () => {
-  const backTopTextColor = document.querySelector(".top-text");
-  backTopTextColor.style.backgroundColor = textBackgroundInput.value;
+ topText.style.backgroundColor = textBackgroundInput.value;
 
-  const backBottomTextColor = document.querySelector(".bottom-text");
-  backBottomTextColor.style.backgroundColor = textBackgroundInput.value;
+ bottomText.style.backgroundColor = textBackgroundInput.value;
 }
 
 textBackgroundInput.addEventListener('input', changeBackgroundColor);
 
-//const backTopTextColor = document.querySelector(".top-text");
-//const backBottomTextColor = document.querySelector(".bottom-text");
 const transparentCheckbox = document.querySelector(".text-background-checkbox");
 
 const transparentBackground = () => {
     const textBackground = topText.getAttribute('class');
   
     if (textBackground === "top-text") {
-      topText.classList.add("transparent-text-top");
+      topText.classList.toggle("transparent-text");
       topText.classList.remove("top-text");
     } else {
-    topText.classList.add("bottom-text");
-    topText.classList.remove("transparent-text-top");
+      topText.classList.add("bottom-text");
+      topText.classList.remove("transparent-text");
     } 
 
 }
