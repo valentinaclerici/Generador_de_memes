@@ -23,34 +23,30 @@ const resetButton =  document.querySelector(".filters-reset-button");
 const lightButton = document.querySelector("#lightButton");
 
 lightButton.addEventListener("click", ()=> {
-body.classList.toggle("light-mode");
-header.classList.toggle("light-mode");
-aside.classList.toggle("light-mode");
-navButtonIm.classList.toggle("light-mode");
-navButtonTxt.classList.toggle("light-mode");
-input.classList.toggle("light-mode");
-textAreaTop.classList.toggle("light-mode");
-textAreaBottom.classList.toggle("light-mode");
-textFontInput.classList.toggle("light-mode");
-textFontInput.classList.toggle("light-mode");
-textSizeInput.classList.toggle("light-mode");
-textColorInput.classList.toggle("light-mode");
-textBackgroundInput.classList.toggle("light-mode");
-outlineNone.classList.toggle("light-mode");
-outlineLight.classList.toggle("light-mode");
-outlineDark.classList.toggle("light-mode");
-lineheightInput.classList.toggle("light-mode");
-paddingInput.classList.toggle("light-mode");
-lightButton.classList.toggle("light-mode");
-asideInput.classList.toggle("light-mode");
-backgroundInput.classList.toggle("light-mode");
-fxInput.classList.toggle("light-mode");
-resetButton.classList.toggle("light-mode");
+  body.classList.toggle("light-mode");
+  header.classList.toggle("light-mode");
+  aside.classList.toggle("light-mode");
+  navButtonIm.classList.toggle("light-mode");
+  navButtonTxt.classList.toggle("light-mode");
+  input.classList.toggle("light-mode");
+  textAreaTop.classList.toggle("light-mode");
+  textAreaBottom.classList.toggle("light-mode");
+  textFontInput.classList.toggle("light-mode");
+  textFontInput.classList.toggle("light-mode");
+  textSizeInput.classList.toggle("light-mode");
+  textColorInput.classList.toggle("light-mode");
+  textBackgroundInput.classList.toggle("light-mode");
+  outlineNone.classList.toggle("light-mode");
+  outlineLight.classList.toggle("light-mode");
+  outlineDark.classList.toggle("light-mode");
+  lineheightInput.classList.toggle("light-mode");
+  paddingInput.classList.toggle("light-mode");
+  lightButton.classList.toggle("light-mode");
+  asideInput.classList.toggle("light-mode");
+  backgroundInput.classList.toggle("light-mode");
+  fxInput.classList.toggle("light-mode");
+  resetButton.classList.toggle("light-mode");
 })
-
-lightButton.addEventListener("click", ()=> {
-
-} )
 
 /*LIGHT MODE BUTTON */
 
@@ -58,14 +54,14 @@ const lightMode = document.querySelector("#lightButton");
 const lightModeButton = document.querySelector("#lightModeButton");
 
 const changeMode = () => {
-
-lightModeButton.classList.toggle('light');
-const mode = lightModeButton.getAttribute('class');
-if (mode === "light-mode-button light") {
-  lightModeButton.innerText = 'Claro';
-} else {
-  lightModeButton.innerText = 'Oscuro';
-}
+  
+  lightModeButton.classList.toggle('light');
+  const mode = lightModeButton.getAttribute('class');
+  if (mode === "light-mode-button light") {
+    lightModeButton.innerText = 'Claro';
+  } else {
+    lightModeButton.innerText = 'Oscuro';
+  }
 }
 lightMode.addEventListener('click', changeMode)
 
@@ -78,18 +74,18 @@ const textAsideButton = document.querySelector("#navButtonTxt");
 const imageAsideButton = document.querySelector("#navButtonIm");
 
 const showAside = () => {
-
+  
   const showMode = textAside.getAttribute("class");
-    if (showMode === "hidden-aside") {
-      textAside.classList.remove('hidden-aside');
-      imageAside.classList.remove('aside-image');
-      imageAside.classList.add('hidden-aside');
-    } else {
-      textAside.classList.add('hidden-aside');
-      imageAside.classList.add('aside-image');
-      imageAside.classList.remove('hidden-aside');
-    }
+  if (showMode === "hidden-aside") {
+    textAside.classList.remove('hidden-aside');
+    imageAside.classList.remove('aside-image');
+    imageAside.classList.add('hidden-aside');
+  } else {
+    textAside.classList.add('hidden-aside');
+    imageAside.classList.add('aside-image');
+    imageAside.classList.remove('hidden-aside');
   }
+}
 
 textAsideButton.addEventListener("click", showAside);
 imageAsideButton.addEventListener("click", showAside);
@@ -101,7 +97,7 @@ imageAsideButton.addEventListener("click", showAside);
 const closeAsideButton = document.querySelector("#closeAsideButton");
 
 const closeAside = () => {
-
+  
   imageAside.classList.add('hidden-aside');
   imageAside.classList.remove('aside-image');
   textAside.classList.add('hidden-aside');
@@ -160,17 +156,17 @@ const saturation = document.querySelector("#saturateSlider");
 const invert = document.querySelector("#invertSlider");
 
 const changeFilter = () => {
-      let brightnessValue = brightness.value;
-      let opacityValue = opacity.value;
-      let contrastValue = contrast.value;
-      let blurValue = blurSlider.value;
-      let grayscaleValue = grayscale.value;
-      let sepiaValue = sepia.value;
-      let hueRotationValue = hueRotation.value;
-      let saturationValue = saturation.value;
-      let invertValue = invert.value;
-    memeColor.style.filter = `brightness(${brightnessValue}) opacity(${opacityValue}) blur(${blurValue}px) contrast(${contrastValue}%) grayscale(${grayscaleValue}%) hue-rotate(${hueRotationValue}deg) sepia(${sepiaValue}%) saturate(${saturationValue}%) invert(${invertValue})`;
-  }
+  let brightnessValue = brightness.value;
+  let opacityValue = opacity.value;
+  let contrastValue = contrast.value;
+  let blurValue = blurSlider.value;
+  let grayscaleValue = grayscale.value;
+  let sepiaValue = sepia.value;
+  let hueRotationValue = hueRotation.value;
+  let saturationValue = saturation.value;
+  let invertValue = invert.value;
+  memeColor.style.filter = `brightness(${brightnessValue}) opacity(${opacityValue}) blur(${blurValue}px) contrast(${contrastValue}%) grayscale(${grayscaleValue}%) hue-rotate(${hueRotationValue}deg) sepia(${sepiaValue}%) saturate(${saturationValue}%) invert(${invertValue})`;
+}
 
 for (i = 0; i < filterBlend.length; i++) {
   filterBlend[i].addEventListener('input', changeFilter);
@@ -215,7 +211,7 @@ const hideTopText = document.querySelector(".top-text-checkbox");
 const hideBottomText = document.querySelector(".bottom-text-checkbox");
 const hideText = () => {
   const hide = topText.getAttribute('class');
-
+  
   if (hide === "top-text") {
     topText.classList.remove("top-text");
     topText.classList.add("hidden-text");
@@ -228,7 +224,7 @@ hideTopText.addEventListener('click', hideText);
 
 const hideText2 = () => {
   const hide2 = bottomText.getAttribute('class');
-
+  
   if (hide2 === "bottom-text") {
     bottomText.classList.remove("bottom-text");
     bottomText.classList.add("hidden-text");
@@ -238,7 +234,7 @@ const hideText2 = () => {
   } 
 }
 hideBottomText.addEventListener('click', hideText2);
- 
+
 //Font Size//
 const selectFontSize = document.querySelector(".text-size-input");
 const changeFontSize = () => {
@@ -277,19 +273,19 @@ alignRightBtn.addEventListener('click', alignRight);
 const changeTextColor = () => {
   const topTextColor = document.querySelector(".top-text");
   topTextColor.style.color = textColorInput.value;
-
+  
   const bottomTextColor = document.querySelector(".bottom-text");
   bottomTextColor.style.color = textColorInput.value;
-
+  
 }
 textColorInput.addEventListener('input', changeTextColor);
 
 //Background
 
 const changeBackgroundColor = () => {
- topText.style.backgroundColor = textBackgroundInput.value;
-
- bottomText.style.backgroundColor = textBackgroundInput.value;
+  topText.style.backgroundColor = textBackgroundInput.value;
+  
+  bottomText.style.backgroundColor = textBackgroundInput.value;
 }
 
 textBackgroundInput.addEventListener('input', changeBackgroundColor);
@@ -297,16 +293,16 @@ textBackgroundInput.addEventListener('input', changeBackgroundColor);
 const transparentCheckbox = document.querySelector(".text-background-checkbox");
 
 const transparentBackground = () => {
-    const textBackground = topText.getAttribute('class');
+  const textBackground = topText.getAttribute('class');
   
-    if (textBackground === "top-text") {
-      topText.classList.toggle("transparent-text");
-      topText.classList.remove("top-text");
-    } else {
-      topText.classList.add("bottom-text");
-      topText.classList.remove("transparent-text");
-    } 
-
+  if (textBackground === "top-text") {
+    topText.classList.toggle("transparent-text");
+    topText.classList.remove("top-text");
+  } else {
+    topText.classList.add("bottom-text");
+    topText.classList.remove("transparent-text");
+  } 
+  
 }
 transparentCheckbox.addEventListener('click', transparentBackground);
 

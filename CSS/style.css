@@ -3,6 +3,7 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
 /************LIGHT MODE**************/
 body.light-mode {
     background-color: #EEEEEE;
@@ -23,19 +24,17 @@ header .nav-button.light-mode {
     color:  #656464;
 }
 header .nav-button:hover.light-mode {
-background-color: #bdbdbd;
-border: 1px solid #bdbdbd;
+    background-color: #bdbdbd;
+    border: 1px solid #bdbdbd;
 } 
-
 input.aside-url-input.light-mode, input.background-color.light-mode, select.background-fx.light-mode, select.text-font-input.light-mode, input.text-size-input.light-mode, .text-font-input.light-mode, #textAreaBottom.light-mode, input.text-color-input.light-mode, input.text-background-input.light-mode, #outlineNone.light-mode, #outlineLight.light-mode, #outlineDark.light-mode, input.padding-input.light-mode, select.lineheight-input.light-mode, #textAreaTop.light-mode, .filters-reset-button.light-mode {
     background-color: #bdbdbd;
     border: 1px solid #bdbdbd;
 }
 .aside-filters.light-mode {
-background-color: #bdbdbd;
-border: 1px solid #bdbdbd;
+    background-color: #bdbdbd;
+    border: 1px solid #bdbdbd;
 }
-
 
 /**HIDDEN ASIDE**/
 .hidden-aside {
@@ -58,18 +57,16 @@ body {
     align-items: center;
 }
 
-
-
 /************HEADER**************/
 
 header {
-width: 100vw;
-height: 20%;
-color: white;
-background-color: #191E2B;
-display: flex;
-flex-direction: column;
-align-items: center;
+    width: 100vw;
+    height: 20%;
+    color: white;
+    background-color: #191E2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header .title {
@@ -88,6 +85,7 @@ header .nav-button {
     border-radius: 5px;
     font-size: 12px;
 }
+
 header .nav-button:hover {
     background-color: #4E5565;
     border: 1px solid #4E5565;
@@ -111,20 +109,19 @@ main {
 }
 /*MEME-CONTAINER*/
 .meme-container {
-width: 35vw;
-height: 80vh;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-position: relative;
+    width: 35vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 .meme-image {
-background-color: black;
-width: 100%;
-height: 100%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
 }
-
 .top-text, .bottom-text{
     font-family: Impact;
     font-size: 300%;
@@ -138,11 +135,9 @@ height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /************ASIDE**************/
-
 
 .aside-container {
     background-color: #191E2B;
@@ -157,6 +152,7 @@ height: 100%;
     right:0;
     overflow: auto;
 }
+
 #closeAsideButton {
     width: 20%;
     height: 20%;
@@ -167,59 +163,56 @@ height: 100%;
     margin-right: 2px;
     margin-top: 10px;
 }
+
 #closeAsideButton:hover {
-  font-size: 1em;
+    font-size: 1em;
 }
-
-
 
 .aside-image, .aside-text, .aside-text-font {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
 .hidden-text {
     display: none;
     visibility: hidden;
 }
 
 h2 {
-font-size: 1em;
-font-weight: 900;
-padding: 0px 10px;
+    font-size: 1em;
+    font-weight: 900;
+    padding: 0px 10px;
 }
 
 .aside-url {
-display: flex;
-flex-direction: column;
-width: 90%;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
 }
 
 h3{
-font-size: 0.7em;
-margin: 10px;
-margin-bottom: 7px;
+    font-size: 0.7em;
+    margin: 10px;
+    margin-bottom: 7px;
 }
 
 /******** ASIDE IMAGEN ********/
 
 input, .outline-box button, .lineheight-input {
-background-color: #30343F;
-border: 1px solid #30343F;
-border-radius: 4px;
-color: #fff;
+    background-color: #30343F;
+    border: 1px solid #30343F;
+    border-radius: 4px;
+    color: #fff;
 }
-
 .aside-background {
-width: 90%;
-display: flex;
-flex-direction: column;
-justify-self: space-between;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
 }
-
 .color-input{
     display: flex;
     flex-direction: row;
@@ -233,20 +226,18 @@ justify-self: space-between;
     border-radius: 4px;
 }
 .aside-filters {
-width: 90%;
-display: flex;
-flex-direction: column;
-justify-self: flex-start;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
 }
 label {
     font-size: 0.6em;
     margin-top: 10px;
 }
-
 fieldset {
     border-color: transparent;
 }
-
 input[type='range'] {
     width: 100%;
     height: 8px;
@@ -262,15 +253,14 @@ input[type='range']::-webkit-slider-runnable-track {
     border-radius: 10px;
 }
 input[type='range']::-webkit-slider-thumb {
-width: 15px;
-height: 15px;
-background-color:  #fff;
-border: 1px solid #fff;
-border-radius: 50%;
-margin-top: -4.5px;
--webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color:  #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: -4.5px;
+    -webkit-appearance: none;
 }
-
 .filters-reset-button {
     padding: 5px;
     margin-top: 15px;
@@ -316,12 +306,11 @@ textarea:focus {
     border-radius: 5px;
 }
 .align-font-container {
-width: 90%;
-display: flex;
-flex-direction: row;
-justify-self: space-between;
-margin-top: 15px;
-
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-self: space-between;
+    margin-top: 15px;
 }
 .text-size-input {
     width: 50%; 
@@ -336,11 +325,10 @@ margin-top: 15px;
     font-size: 0.7em;
 }
 .color-and-background-container {
-width: 90%;
-display: flex;
-flex-direction: row;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
 }
-
 .text-color-input{
     width: 90%;
     display: flex;
@@ -363,11 +351,11 @@ flex-direction: row;
     justify-content: flex-start;
 }
 .outline-box{
-display: flex;  
-flex-direction: row;
-justify-content: space-between;
-margin-left: 10px;
-margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
 } 
 .outline-box button {
     justify-items: center;
@@ -378,15 +366,13 @@ margin-right: 10px;
     
 }
 .lineheight-input, .padding-input {
-width: 90%;
-height: 40%;
-margin-left: 5%;
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
 }
-
 .transparent-text {
     background-color: transparent;
     position: absolute;
-
 }
 
 /******** DOWNLOAD BUTTON ********/
@@ -434,22 +420,22 @@ margin-left: 5%;
         font-size: 1.6em;
     }
 
-
     label {
         font-size: 1em;
         margin-bottom: 5px;
     }
+
     .aside-container {
         align-items: space-between;
         font-size: 1em;
         height: 100%;
-    width: 25%;
-    z-index: 9999;
-    position: absolute;
-    top: 0;
-    right: 0;
-    overflow: auto;
-    display: unset;
+        width: 25%;
+        z-index: 9999;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: auto;
+        display: unset;
     }
 
     #closeAsideButton {
@@ -457,13 +443,16 @@ margin-left: 5%;
         font-size: 1.6em;
         height: 1vh;
     }
+
     h2 {
         text-align: center;
         font-size: 1.6em;
     }
+
     .font-style{
         width: 30%;
     }
+
     .margin-text{
         margin: 10px 0px;
     }
@@ -471,17 +460,19 @@ margin-left: 5%;
     .container-text {
         margin-top: 0px;
     }
+
     #asideText {
         width: 90%;
         height: 100%;
         margin: 5%
     }
-   
-.aside-top-text, .aside-bottom-text {
-    width: 95%;
-} 
-.meme-container {
-    width: 60%;
-    height: 60%;
-}
+
+    .aside-top-text, .aside-bottom-text {
+        width: 95%;
+    } 
+
+    .meme-container {
+        width: 60%;
+        height: 60%;
+    }
 } 
